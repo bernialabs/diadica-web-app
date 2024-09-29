@@ -28,28 +28,30 @@ export default function Component() {
 			</nav>
 
 			{/* Hero Section */}
-			<div className="flex-grow bg-[#FFE4AF] pt-20">
-				<div className="container mx-auto px-4 py-12 flex flex-col items-center">
+			<div className="flex-grow bg-[#faf5f2] pt-20">
+				<div className="py-12 flex flex-col items-center">
 					<div className="md:hidden mb-8">
-						<Image src="/Hero_Image_Left.webp" alt="Mobile App" width={531} height={442} />
+						<Image src="/Hero_Image_Left.webp" alt="Mobile App" width={531} height={42} />
 					</div>
-					<div className="flex items-center justify-center">
-						<div className="hidden md:block">
-							<Image src="/Hero_Image_Left.webp" alt="Left App" width={1052} height={1246} />
-						</div>
-						<div className="text-center mx-4">
-							<h1 className="text-3xl md:text-4xl text-gray-800 mb-4">Menos enredos.</h1>
-							<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
-						</div>
-						<div className="hidden md:block">
-							<Image src="/Hero_Image_Right.webp" alt="Right App" width={1052} height={1246} />
+					<div className="relative w-full overflow-hidden">
+						<div className="flex flex-row items-center justify-center">
+							<div className="hidden md:block flex-shrink-0">
+								<Image src="/Hero_Image_Left.webp" alt="Left App" width={526} height={623} className="w-auto h-auto" />
+							</div>
+							<div className="text-center mx-32 mb-64">
+								<h1 className="text-3xl md:text-4xl text-gray-800 mb-32">Menos enredos.</h1>
+								<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
+							</div>
+							<div className="hidden md:block flex-shrink-0">
+								<Image src="/Hero_Image_Right.webp" alt="Right App" width={526} height={623} className="w-auto h-auto" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* Wave Transition */}
-			<div className="bg-[#FFE4AF]">
+			<div className="bg-[#faf5f2]">
 				<svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 53.3C840 47 960 33 1080 30C1200 27 1320 33 1380 36.7L1440 40V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V0Z" fill="white" />
 				</svg>
