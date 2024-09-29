@@ -38,7 +38,7 @@ export default function Component() {
 							<div className="hidden md:block flex-shrink-0">
 								<Image src="/Hero_Image_Left.webp" alt="Left App" width={526} height={623} className="w-auto h-auto" />
 							</div>
-							<div className="text-center mx-32 mb-64">
+							<div className="text-center mx-32 md:mb-64">
 								<h1 className="text-3xl md:text-4xl text-gray-800 mb-32">Menos enredos.</h1>
 								<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
 							</div>
