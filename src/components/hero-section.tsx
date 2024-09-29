@@ -31,18 +31,18 @@ export default function Component() {
 			<div className="flex-grow bg-[#FFE4AF] pt-20">
 				<div className="container mx-auto px-4 py-12 flex flex-col items-center">
 					<div className="md:hidden mb-8">
-						<Image src="/mockup2.jpeg" alt="Mobile App" width={531} height={442} />
+						<Image src="/Hero_Image_Left.webp" alt="Mobile App" width={531} height={442} />
 					</div>
 					<div className="flex items-center justify-center">
 						<div className="hidden md:block">
-							<Image src="/mockup1.jpeg" alt="Left App" width={596} height={688} />
+							<Image src="/Hero_Image_Left.webp" alt="Left App" width={1052} height={1246} />
 						</div>
 						<div className="text-center mx-4">
 							<h1 className="text-3xl md:text-4xl text-gray-800 mb-4">Menos enredos.</h1>
 							<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
 						</div>
 						<div className="hidden md:block">
-							<Image src="/mockup1.jpeg" alt="Right App" width={596} height={688} />
+							<Image src="/Hero_Image_Right.webp" alt="Right App" width={1052} height={1246} />
 						</div>
 					</div>
 				</div>
