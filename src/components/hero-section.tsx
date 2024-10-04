@@ -28,7 +28,7 @@ export default function Component() {
 			</nav>
 
 			{/* Hero Section */}
-			<div className="flex-grow bg-[#faf5f2] pt-20">
+			<div className="flex-grow bg-[#f0f8fb] pt-20">
 				<div className="py-12 flex flex-col items-center">
 					<div className="md:hidden mb-8">
 						<Image src="/Hero_Image_Left.webp" alt="Mobile App" width={531} height={42} />
@@ -51,7 +51,7 @@ export default function Component() {
 			</div>
 
 			{/* Wave Transition */}
-			<div className="bg-[#faf5f2]">
+			<div className="bg-[#f0f8fb]">
 				<svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 53.3C840 47 960 33 1080 30C1200 27 1320 33 1380 36.7L1440 40V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V0Z" fill="white" />
 				</svg>
