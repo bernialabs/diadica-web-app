@@ -10,8 +10,8 @@ export default function Component() {
 			<nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-10">
 				<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 					<div className="flex items-center">
-						<Image src="/logodiadica.png" alt="Diadica Logo" width={32} height={32} />
-						<span className="ml-2 text-xl text-gray-800 font-['Century Gothic']">Diadica</span>
+						<Image src="/logo.png" alt="Diadica Logo" width={200} height={32} />
+						{/* <span className="ml-2 text-xl text-gray-800 font-['Century Gothic']">Diadica</span> */}
 					</div>
 					<div className="hidden md:flex items-center space-x-4">
 						<Link href="#" className="text-gray-600 hover:text-purple-600 hover:border-b-2 hover:border-purple-600 transition-colors duration-300">
@@ -31,19 +31,19 @@ export default function Component() {
 			<div className="flex-grow bg-[#f0f8fb] pt-20">
 				<div className="py-12 flex flex-col items-center">
 					<div className="md:hidden mb-8">
-						<Image src="/Hero_Image_Left.webp" alt="Mobile App" width={531} height={42} />
+						<Image src="/hero_right.png" alt="Mobile App" width={531} height={42} />
 					</div>
 					<div className="relative w-full overflow-hidden">
 						<div className="flex flex-row items-center justify-center">
 							<div className="hidden md:block flex-shrink-0">
-								<Image src="/Hero_Image_Left.webp" alt="Left App" width={526} height={623} className="w-auto h-auto" />
+								<Image src="/hero_left.png" alt="Left App" width={526} height={623} className="w-auto h-auto" />
 							</div>
 							<div className="text-center mx-32 md:mb-64">
-								<h1 className="text-3xl md:text-4xl text-gray-800 mb-32">Menos enredos.</h1>
+								<h1 className="text-4xl md:text-4xl text-[#454341] mb-32">Menos enredos.</h1>
 								<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
 							</div>
 							<div className="hidden md:block flex-shrink-0">
-								<Image src="/Hero_Image_Right.webp" alt="Right App" width={526} height={623} className="w-auto h-auto" />
+								<Image src="/hero_right.png" alt="Right App" width={526} height={623} className="w-auto h-auto" />
 							</div>
 						</div>
 					</div>
