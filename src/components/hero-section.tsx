@@ -1,7 +1,15 @@
 import React from 'react'
-import { Button } from "@/components/ui/button"
+import { ArrowRight, Instagram, Twitter, Facebook, Linkedin, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { AnimatedText } from './animated-text'
 
 export default function Component() {
 	return (
@@ -11,7 +19,6 @@ export default function Component() {
 				<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 					<div className="flex items-center">
 						<Image src="/logo.png" alt="Diadica Logo" width={200} height={32} />
-						{/* <span className="ml-2 text-xl text-gray-800 font-['Century Gothic']">Diadica</span> */}
 					</div>
 					<div className="hidden md:flex items-center space-x-4">
 						<Link href="#" className="text-gray-600 hover:text-purple-600 hover:border-b-2 hover:border-purple-600 transition-colors duration-300">
@@ -39,7 +46,7 @@ export default function Component() {
 								<Image src="/hero_left.png" alt="Left App" width={526} height={623} className="w-auto h-auto" />
 							</div>
 							<div className="text-center mx-32 md:mb-64">
-								<h1 className="text-4xl md:text-4xl text-[#454341] mb-32">Menos enredos.</h1>
+								<h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos enredos.</h1>
 								<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
 							</div>
 							<div className="hidden md:block flex-shrink-0">
@@ -69,6 +76,316 @@ export default function Component() {
 					</Button>
 				</div>
 			</div>
-		</div>
+
+			<div className="font-['Century Gothic']">
+        <section className="w-full">
+          {/* Features Section */}
+          <div className="bg-gradient-to-b from-[#E7F7FD] to-[#C4CDFB] py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {features.map((feature, index) => (
+                  <div key={index} className="text-center">
+                    <div className="w-[135px] h-[150px] mx-auto mb-4">
+                      <img src={`/${feature.picture}?height=150&width=135`} alt={feature.title} className="w-full h-full object-contain" />
+                    </div>
+                    <AnimatedText delay={index * 200}>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">{feature.title}</h3>
+                    </AnimatedText>
+                    <AnimatedText delay={index * 200 + 100}>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </AnimatedText>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Benefits Section */}
+          <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <AnimatedText>
+                <h2 className="text-3xl font-bold text-gray-800 mb-12 mx-auto max-w-3xl text-center">
+                  Personalizado para dos, ayudándoles a centrarse en lo que verdaderamente importa.
+                </h2>
+              </AnimatedText>
+              <div className="space-y-12 mx-[15%]">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center space-x-8">
+                    <div className="flex-shrink-0">
+                      <div className="w-32 h-32 rounded-full bg-[#89D8F1] flex items-center justify-center">
+                        <img src={`/${benefit.picture}?height=96&width=96`} alt={benefit.title} className="w-24 h-24" />
+                      </div>
+                    </div>
+                    <div className="flex-grow">
+                      <AnimatedText delay={index * 200}>
+                        <h3 className="text-xl font-bold text-gray-800 mb-2">{benefit.title}</h3>
+                      </AnimatedText>
+                      <AnimatedText delay={index * 200 + 100}>
+                        <p className="text-gray-600">{benefit.description}</p>
+                      </AnimatedText>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-12 flex flex-col items-center space-y-6">
+                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                  <img src="/app_store.png?height=60&width=200" alt="Download on the App Store" className="h-10" />
+                  <img src="/google_play.png?height=60&width=200" alt="Get it on Google Play" className="h-10" />
+                </div>
+                <Button className="bg-[#89D8F1] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6BCAE3] transition-colors">
+                  Únete a la prueba
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Use Cases Section */}
+          <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <AnimatedText>
+                <h2 className="text-4xl font-bold text-center text-[#333333] mb-12">
+                  Casos de usos de Diadica
+                </h2>
+              </AnimatedText>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {useCases.map((useCase, index) => (
+                  <div key={index} className="flex flex-col items-center text-center">
+                    <div className="w-32 h-32 rounded-full bg-[#6163FD] flex items-center justify-center mb-4">
+                      <img src={`/placeholder.svg?height=96&width=96`} alt={useCase} className="w-24 h-24" />
+                    </div>
+                    <AnimatedText delay={index * 200}>
+                      <p className="font-bold text-black">{useCase}</p>
+                    </AnimatedText>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Team Section */}
+          <div className="bg-[#C3E6FC] py-16 px-4 sm:px-6 lg:px-8 rounded-lg">
+            <div className="max-w-7xl mx-auto">
+              <AnimatedText>
+                <h2 className="text-4xl font-bold text-center text-black mb-12">
+                  Conoce al equipo
+                </h2>
+              </AnimatedText>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {teamMembers.map((member, index) => (
+                  <AnimatedText key={index} delay={index * 200}>
+                    <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md h-full">
+                      <img src={`/${member.picture}?height=200&width=200`} alt={member.name} className="w-48 h-48 rounded-full mb-4" />
+                      <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
+                      <p className="text-[#6163FD] font-bold mb-2">{member.position}</p>
+                      <p className="text-gray-600 mb-2 font-bold">{member.boldBio}</p>
+                      <p className="text-gray-600 mb-4 flex-grow">{member.bio}</p>
+                      <div className="flex space-x-4">
+                        <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
+                          <Instagram className="w-6 h-6" />
+                        </a>
+                        <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
+                          <Linkedin className="w-6 h-6" />
+                        </a>
+                        {member.name === "Maria Alejandra Ovalle Zuleta" && (
+                          <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
+                            <Globe className="w-6 h-6" />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </AnimatedText>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="bg-[#F0F8FB] py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto">
+              <AnimatedText>
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
+                  Preguntas frecuentes
+                </h2>
+              </AnimatedText>
+              <AnimatedText delay={200}>
+                <p className="text-center text-gray-600 mb-12">
+                  Obtén más información sobre cómo funciona Diadica.
+                </p>
+              </AnimatedText>
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <AnimatedText key={index} delay={index * 100}>
+                    <AccordionItem value={`item-${index}`} className="border-none">
+                      <AccordionTrigger className="bg-white hover:bg-gray-50 rounded-lg px-6 py-4 text-left font-semibold text-gray-800">
+                        {item.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="bg-white mt-1 rounded-lg px-6 py-4 text-gray-600">
+                        {item.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </AnimatedText>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer Section */}
+        <footer className="bg-white pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+              {/* Logo & Tagline Column */}
+              <div className="flex flex-col items-start">
+                <img src="/logo_icon.png?height=25&width=75" alt="Diadica Logo" className="mb-4" />
+                <p className="text-gray-800 font-bold mb-2">Conecta con tu pareja. Fortalece tu relación saludable</p>
+                <p className="text-sm font-semibold mb-4">DESCARGA LA APP DIADICA</p>
+                <div className="flex space-x-2">
+                  <img src="/app_store.png?height=40&width=120" alt="App Store" className="h-10" />
+                  <img src="/google_play.png?height=40&width=120" alt="Google Play" className="h-10" />
+                </div>
+              </div>
+
+              {/* Experiences Column */}
+              <div>
+                <h3 className="text-gray-800 font-bold uppercase mb-4">Experiencias</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Sorprender</a></li>
+                  <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Planes juntos</a></li>
+                </ul>
+              </div>
+
+              {/* Support Column */}
+              <div>
+                <h3 className="text-gray-800 font-bold uppercase mb-4">Soporte</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Términos y condiciones</a></li>
+                  <li><a href="#" className="text-gray-600 hover:text-black transition-colors">Aviso de privacidad</a></li>
+                  <li><a href="mailto:info@diadica.com" className="text-gray-600 hover:text-black transition-colors">info@diadica.com</a></li>
+                </ul>
+              </div>
+
+              {/* Social Media Links Column */}
+              <div>
+                <h3 className="text-gray-800 font-bold uppercase mb-4">¡Síguenos!</h3>
+                <div className="flex space-x-4">
+                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
+                    <Instagram className="w-6 h-6 text-white" />
+                  </a>
+                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
+                    <Twitter className="w-6 h-6 text-white" />
+                  </a>
+                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
+                    <Facebook className="w-6 h-6 text-white" />
+                  </a>
+                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
+                    <Linkedin className="w-6 h-6 text-white" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center">
+              <button className="bg-gray-100 text-gray-800 px-4 py-2 rounded-md flex items-center mb-4 sm:mb-0">
+                <img src="/spanish.png?height=20&width=30" alt="Spanish Flag" className="mr-2 h-5" />
+                Español
+              </button>
+              <p className="text-gray-500 text-sm">© 2024 Diadica</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+		</div>		
 	)
 }
+
+const features = [
+  {
+    title: "Conexión emocional sólida",
+    description: "Facilitamos momentos significativos que fortalecen el vínculo entre las parejas, incluso a distancia, ayudando a mantener viva la chispa.",
+    picture: "benefit_1.png"
+  },
+  {
+    title: "Experiencias personalizadas únicas",
+    description: "Aseguramos que cada actividad propuesta está alineada con las preferencias y necesidades de cada pareja, garantizando que ambos disfruten al máximo.",
+    picture: "benefit_2.png"
+  },
+  {
+    title: "Fomentar relaciones saludables",
+    description: "Ayudamos a las parejas a seguir priorizando el tiempo que comparten juntas, manteniéndolo como una parte esencial de sus vidas.",
+    picture: "benefit_3.png"
+  },
+]
+
+const benefits = [
+  {
+    title: "Cuestionarios especializados",
+    description: "Con solo unas pocas preguntas seleccionadas por terapeutas, podrás compartir tus necesidades y gustos para obtener planes personalizados de forma rápida.",
+    picture: "desc_1.png"
+  },
+  {
+    title: "IA entrada en terapia de pareja",
+    description: "Nuestra tecnología entrada con conocimiento experto, crea planes ajustados a ambos, garantizando experiencias que fortalezcan su vínculo.",
+    picture: "desc_2.png"
+  },
+  {
+    title: "Planificación sin complicaciones",
+    description: "No sólo sugerimos planes, también les enviamos el recordatorio por Google Calendar a los dos para que no olviden ningún momento especial.",
+    picture: "desc_3.png"
+  },
+]
+
+const useCases = [
+  "Parejas a distancia",
+  "Parejas con agendas ocupadas",
+  "Parejas con ganas de innovar",
+  "Parejas a las que les cuesta encontrar ideas",
+]
+
+const teamMembers = [
+  {
+    name: "Maria Alejandra Ovalle Zuleta",
+    position: "CEO",
+    boldBio: "Psicóloga, Psicómetra y Terapeuta de Pareja.",
+    bio: "Especialista en el desarrollo de cuestionarios psicométricos y con amplia experiencia como psicoterapeuta en su consultorio privado. Comparte contenido valioso en redes sociales enfocado en sexualidad y temas de pareja.",
+    picture: "ale_1.png"
+  },
+  {
+    name: "Alejandro Fernandez",
+    position: "CTO",
+    boldBio: "Desarrollador Backend Senior.",
+    bio: "Ingeniero de Software, especializado en diseño y arquitectura de servicios en la nube. Experiencia en Amazon Prime Video y Life360.",
+    picture: "ale_2.png"
+  },
+  {
+    name: "Andres Vasquez",
+    position: "Desarrollador",
+    boldBio: "Desarrollador Fronted Senior.",
+    bio: "Ingeniero deo software con experiencia en desarrollo de aplicaciones móviles, desarrollo web y manejo de servidores en Amazon Web Services (AWS).",
+    picture: "andres.png"
+  },
+]
+
+const faqItems = [
+  {
+    question: "¿Qué es Diadica?",
+    answer: "Diadica es una aplicación móvil desarrollada por terapeutas de pareja y expertos en tecnología con el objetivo de ayudar a las parejas a superar los retos que enfrentan en la vida moderna, como el estrés y la falta de tiempo de calidad. Nuestra misión es proporcionar herramientas prácticas y efectivas que apoyen a las parejas, ayudándoles a fortalecer su conexión y gestionar mejor su tiempo y relación."
+  },
+  {
+    question: "¿Para qué se diseñó esta aplicación?",
+    answer: "Esta aplicación fue creada para ayudar a las parejas a conectarse más profundamente, ya sea que estén a distancia o quieran salir de la rutina. Nuestro objetivo es facilitar planes personalizados y significativos que fortalezcan la relación, proporcionando ideas creativas y gestionando las actividades de forma eficiente."
+  },
+  {
+    question: "¿La aplicación es gratuita?",
+    answer: "Puedes comenzar a usar Diadica con 169 créditos gratuitos, que te permitirán acceder a planes personalizados, sorprender a tu pareja y organizar actividades con integración a Google Calendar. Una vez que hayas utilizado tus créditos, ofrecemos opciones de paquetes adicionales o una suscripción ilimitada para que sigas disfrutando de todas las funciones de Diadica sin interrupciones."
+  },
+  {
+    question: "¿Cómo funciona?",
+    answer: "<p>Diadica ofrece dos funciones principales:</p>\n\n<p><span className='font-bold'>Sorprender a tu pareja:</span> Basado en un cuestionario que respondes, te proporcionamos planes e ideas personalizadas que puedes utilizar para invitar a tu pareja a vivir momentos especiales.</p>\n\n<p><span className='font-bold'>Planes compartidos:</span> Cada miembro de la pareja completa su propio cuestionario en la aplicación. A partir de estos datos, generamos un plan que satisfaga los gustos de ambos. Además, integramos el plan en Google Calendar, enviando una notificación para que ambos reserven ese espacio en sus agendas.</p>"
+  },
+  {
+    question: "¿Para qué parejas se recomienda?",
+    answer: "Diadica está diseñada para parejas que buscan fortalecer su conexión, ya sea que estén a distancia, tengan agendas ocupadas o quieran salir de la rutina. La aplicación ofrece herramientas para sorprender a tu pareja con ideas creativas o generar planes personalizados que satisfacen a ambos."
+  }
+]
