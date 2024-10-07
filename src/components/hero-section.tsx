@@ -86,7 +86,13 @@ export default function Component() {
                 {features.map((feature, index) => (
                   <div key={index} className="text-center">
                     <div className="w-[135px] h-[150px] mx-auto mb-4">
-                      <img src={`/${feature.picture}?height=150&width=135`} alt={feature.title} className="w-full h-full object-contain" />
+                      <Image
+                        src={`/${feature.picture}`}
+                        alt={feature.title}
+                        width={135}
+                        height={150}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <AnimatedText delay={index * 200}>
                       <h3 className="text-xl font-bold text-gray-800 mb-2">{feature.title}</h3>
@@ -113,7 +119,13 @@ export default function Component() {
                   <div key={index} className="flex items-center space-x-8">
                     <div className="flex-shrink-0">
                       <div className="w-32 h-32 rounded-full bg-[#89D8F1] flex items-center justify-center">
-                        <img src={`/${benefit.picture}?height=96&width=96`} alt={benefit.title} className="w-24 h-24" />
+                        <Image
+                          src={`/${benefit.picture}`}
+                          alt={benefit.title}
+                          width={96}
+                          height={96}
+                          className="w-24 h-24"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -129,8 +141,21 @@ export default function Component() {
               </div>
               <div className="mt-12 flex flex-col items-center space-y-6">
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                  <img src="/app_store.png?height=60&width=200" alt="Download on the App Store" className="h-10" />
-                  <img src="/google_play.png?height=60&width=200" alt="Get it on Google Play" className="h-10" />
+                  <Image
+                    src="/app_store.png"
+                    alt="Download on the App Store"
+                    width={200}
+                    height={60}
+                    className="h-10 w-auto"
+                  />
+
+                  <Image
+                    src="/google_play.png"
+                    alt="Get it on Google Play"
+                    width={200}
+                    height={60}
+                    className="h-10 w-auto"
+                  />
                 </div>
                 <Button className="bg-[#89D8F1] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6BCAE3] transition-colors">
                   Únete a la prueba
@@ -152,7 +177,13 @@ export default function Component() {
                 {useCases.map((useCase, index) => (
                   <div key={index} className="flex flex-col items-center text-center">
                     <div className="w-32 h-32 rounded-full bg-[#6163FD] flex items-center justify-center mb-4">
-                      <img src={`/placeholder.svg?height=96&width=96`} alt={useCase} className="w-24 h-24" />
+                      <Image
+                        src="/placeholder.svg"
+                        alt={useCase}
+                        width={96}
+                        height={96}
+                        className="w-24 h-24"
+                      />
                     </div>
                     <AnimatedText delay={index * 200}>
                       <p className="font-bold text-black">{useCase}</p>
@@ -175,7 +206,13 @@ export default function Component() {
                 {teamMembers.map((member, index) => (
                   <AnimatedText key={index} delay={index * 200}>
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md h-full">
-                      <img src={`/${member.picture}?height=200&width=200`} alt={member.name} className="w-48 h-48 rounded-full mb-4" />
+                      <Image
+                        src={`/${member.picture}`}
+                        alt={member.name}
+                        width={200}
+                        height={200}
+                        className="w-48 h-48 rounded-full mb-4"
+                      />
                       <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
                       <p className="text-[#6163FD] font-bold mb-2">{member.position}</p>
                       <p className="text-gray-600 mb-2 font-bold">{member.boldBio}</p>
@@ -237,12 +274,31 @@ export default function Component() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
               {/* Logo & Tagline Column */}
               <div className="flex flex-col items-start">
-                <img src="/logo_icon.png?height=25&width=75" alt="Diadica Logo" className="mb-4" />
+                <Image
+                  src="/logo_icon.png"
+                  alt="Diadica Logo"
+                  width={75}
+                  height={25}
+                  className="mb-4"
+                />
                 <p className="text-gray-800 font-bold mb-2">Conecta con tu pareja. Fortalece tu relación saludable</p>
                 <p className="text-sm font-semibold mb-4">DESCARGA LA APP DIADICA</p>
                 <div className="flex space-x-2">
-                  <img src="/app_store.png?height=40&width=120" alt="App Store" className="h-10" />
-                  <img src="/google_play.png?height=40&width=120" alt="Google Play" className="h-10" />
+                  <Image
+                    src="/app_store.png"
+                    alt="App Store"
+                    width={120}
+                    height={40}
+                    className="h-10 w-auto"
+                  />
+
+                  <Image
+                    src="/google_play.png"
+                    alt="Google Play"
+                    width={120}
+                    height={40}
+                    className="h-10 w-auto"
+                  />
                 </div>
               </div>
 
@@ -288,7 +344,13 @@ export default function Component() {
             {/* Footer Bottom */}
             <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center">
               <button className="bg-gray-100 text-gray-800 px-4 py-2 rounded-md flex items-center mb-4 sm:mb-0">
-                <img src="/spanish.png?height=20&width=30" alt="Spanish Flag" className="mr-2 h-5" />
+                <Image
+                  src="/spanish.png"
+                  alt="Spanish Flag"
+                  width={30}
+                  height={20}
+                  className="mr-2 h-5 w-auto"
+                />
                 Español
               </button>
               <p className="text-gray-500 text-sm">© 2024 Diadica</p>
