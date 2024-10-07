@@ -12,72 +12,72 @@ import {
 import { AnimatedText } from './animated-text'
 
 export default function Component() {
-	return (
-		<div className="min-h-screen flex flex-col">
-			{/* Navigation Bar */}
-			<nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-10">
-				<div className="container mx-auto px-4 py-4 flex justify-between items-center">
-					<div className="flex items-center">
-						<Image src="/logo.png" alt="Diadica Logo" width={200} height={32} />
-					</div>
-					<div className="hidden md:flex items-center space-x-4">
-						<Link href="#" className="text-gray-600 hover:text-purple-600 hover:border-b-2 hover:border-purple-600 transition-colors duration-300">
-							Experiencias
-						</Link>
-						<Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
-							Únete a la prueba
-						</Button>
-					</div>
-					<Button className="md:hidden bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
-						Únete a la prueba
-					</Button>
-				</div>
-			</nav>
+  return (
+    <div className="min-h-screen flex flex-col">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-10">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="flex items-center">
+            <Image src="/logo.png" alt="Diadica Logo" width={190} height={32} className="h-auto" />
+          </div>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link href="#" className="text-gray-600 hover:text-purple-600 hover:border-b-2 hover:border-purple-600 transition-colors duration-300">
+              Experiencias
+            </Link>
+            <Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
+              Únete a la prueba
+            </Button>
+          </div>
+          <Button className="md:hidden bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
+            Únete a la prueba
+          </Button>
+        </div>
+      </nav>
 
-			{/* Hero Section */}
-			<div className="flex-grow bg-[#f0f8fb] pt-20">
-				<div className="py-12 flex flex-col items-center">
-					<div className="md:hidden mb-8">
-						<Image src="/hero_right.png" alt="Mobile App" width={531} height={42} />
-					</div>
-					<div className="relative w-full overflow-hidden">
-						<div className="flex flex-row items-center justify-center">
-							<div className="hidden md:block flex-shrink-0">
-								<Image src="/hero_left.png" alt="Left App" width={526} height={623} className="w-auto h-auto" />
-							</div>
-							<div className="text-center mx-32 md:mb-64">
-								<h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos enredos.</h1>
-								<h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
-							</div>
-							<div className="hidden md:block flex-shrink-0">
-								<Image src="/hero_right.png" alt="Right App" width={526} height={623} className="w-auto h-auto" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+      {/* Hero Section */}
+      <div className="flex-grow bg-[#f0f8fb] pt-20">
+        <div className="py-12 flex flex-col items-center">
+          <div className="md:hidden mb-8">
+            <Image src="/hero_right.png" alt="Mobile App" width={531} height={42} />
+          </div>
+          <div className="relative w-full overflow-hidden">
+            <div className="flex flex-row items-center justify-center">
+              <div className="hidden md:block flex-shrink-0">
+                <Image src="/hero_left.png" alt="Left App" width={526} height={623} className="w-auto h-auto" />
+              </div>
+              <div className="text-center mx-32 md:mb-64">
+                <h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos enredos.</h1>
+                <h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
+              </div>
+              <div className="hidden md:block flex-shrink-0">
+                <Image src="/hero_right.png" alt="Right App" width={526} height={623} className="w-auto h-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			{/* Wave Transition */}
-			<div className="bg-[#f0f8fb]">
-				<svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 53.3C840 47 960 33 1080 30C1200 27 1320 33 1380 36.7L1440 40V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V0Z" fill="white" />
-				</svg>
-			</div>
+      {/* Wave Transition */}
+      <div className="bg-[#f0f8fb]">
+        <svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 53.3C840 47 960 33 1080 30C1200 27 1320 33 1380 36.7L1440 40V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V0Z" fill="white" />
+        </svg>
+      </div>
 
-			{/* Call-to-action Section */}
-			<div className="bg-white py-12">
-				<div className="container mx-auto px-4 text-center">
-					<h2 className="text-2xl md:text-3xl text-gray-800 mb-4">Sé amable con tu mente</h2>
-					<p className="text-gray-600 max-w-2xl mx-auto mb-8">
-						Las parejas que invierten tiempo en actividades compartidas regularmente disfrutan de mayor satisfacción, intimidad y conexión. Esto es clave en las relaciones modernas, donde el estrés y las responsabilidades diarias pueden afectar la disponibilidad, la motivación y la creatividad para planear momentos juntos.
-					</p>
-					<Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD] text-lg px-8 py-3">
-						Únete a la prueba
-					</Button>
-				</div>
-			</div>
+      {/* Call-to-action Section */}
+      <div className="bg-white py-12">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl text-gray-800 mb-4">Sé amable con tu mente</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+            Las parejas que invierten tiempo en actividades compartidas regularmente disfrutan de mayor satisfacción, intimidad y conexión. Esto es clave en las relaciones modernas, donde el estrés y las responsabilidades diarias pueden afectar la disponibilidad, la motivación y la creatividad para planear momentos juntos.
+          </p>
+          <Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD] text-lg px-8 py-3">
+            Únete a la prueba
+          </Button>
+        </div>
+      </div>
 
-			<div className="font-['Century Gothic']">
+      <div className="font-['Century Gothic']">
         <section className="w-full">
           {/* Features Section */}
           <div className="bg-gradient-to-b from-[#E7F7FD] to-[#C4CDFB] py-16 px-4 sm:px-6 lg:px-8">
@@ -176,17 +176,17 @@ export default function Component() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {useCases.map((useCase, index) => (
                   <div key={index} className="flex flex-col items-center text-center">
-                    <div className="w-32 h-32 rounded-full bg-[#6163FD] flex items-center justify-center mb-4">
+                    <div className="flex items-center justify-center mb-4">
                       <Image
-                        src="/placeholder.svg"
-                        alt={useCase}
-                        width={96}
-                        height={96}
-                        className="w-24 h-24"
+                        src={`/${useCase.picture}`}
+                        alt={useCase.title}
+                        width={146}
+                        height={146}
+                        className="w-32 h-32 rounded-full object-cover"
                       />
                     </div>
                     <AnimatedText delay={index * 200}>
-                      <p className="font-bold text-black">{useCase}</p>
+                      <p className="font-bold text-black">{useCase.title}</p>
                     </AnimatedText>
                   </div>
                 ))}
@@ -277,9 +277,9 @@ export default function Component() {
                 <Image
                   src="/logo_icon.png"
                   alt="Diadica Logo"
-                  width={75}
+                  width={65}
                   height={25}
-                  className="mb-4"
+                  className="mb-4 h-auto"
                 />
                 <p className="text-gray-800 font-bold mb-2">Conecta con tu pareja. Fortalece tu relación saludable</p>
                 <p className="text-sm font-semibold mb-4">DESCARGA LA APP DIADICA</p>
@@ -358,25 +358,25 @@ export default function Component() {
           </div>
         </footer>
       </div>
-		</div>		
-	)
+    </div>
+  )
 }
 
 const features = [
   {
     title: "Conexión emocional sólida",
     description: "Facilitamos momentos significativos que fortalecen el vínculo entre las parejas, incluso a distancia, ayudando a mantener viva la chispa.",
-    picture: "benefit_1.png"
+    picture: "feature_1.png"
   },
   {
     title: "Experiencias personalizadas únicas",
     description: "Aseguramos que cada actividad propuesta está alineada con las preferencias y necesidades de cada pareja, garantizando que ambos disfruten al máximo.",
-    picture: "benefit_2.png"
+    picture: "feature_2.png"
   },
   {
     title: "Fomentar relaciones saludables",
     description: "Ayudamos a las parejas a seguir priorizando el tiempo que comparten juntas, manteniéndolo como una parte esencial de sus vidas.",
-    picture: "benefit_3.png"
+    picture: "feature_3.png"
   },
 ]
 
@@ -384,25 +384,37 @@ const benefits = [
   {
     title: "Cuestionarios especializados",
     description: "Con solo unas pocas preguntas seleccionadas por terapeutas, podrás compartir tus necesidades y gustos para obtener planes personalizados de forma rápida.",
-    picture: "desc_1.png"
+    picture: "benefit_1.png"
   },
   {
     title: "IA entrada en terapia de pareja",
     description: "Nuestra tecnología entrada con conocimiento experto, crea planes ajustados a ambos, garantizando experiencias que fortalezcan su vínculo.",
-    picture: "desc_2.png"
+    picture: "benefit_2.png"
   },
   {
     title: "Planificación sin complicaciones",
     description: "No sólo sugerimos planes, también les enviamos el recordatorio por Google Calendar a los dos para que no olviden ningún momento especial.",
-    picture: "desc_3.png"
+    picture: "benefit_3.png"
   },
 ]
 
 const useCases = [
-  "Parejas a distancia",
-  "Parejas con agendas ocupadas",
-  "Parejas con ganas de innovar",
-  "Parejas a las que les cuesta encontrar ideas",
+  {
+    title: "Parejas a distancia",
+    picture: "couples_1.png",
+  },
+  {
+    title: "Parejas con agendas ocupadas",
+    picture: "couples_2.png",
+  },
+  {
+    title: "Parejas con ganas de innovar",
+    picture: "couples_3.png",
+  },
+  {
+    title: "Parejas a las que les cuesta encontrar ideas",
+    picture: "couples_4.png",
+  },
 ]
 
 const teamMembers = [
@@ -444,7 +456,7 @@ const faqItems = [
   },
   {
     question: "¿Cómo funciona?",
-    answer: "<p>Diadica ofrece dos funciones principales:</p>\n\n<p><span className='font-bold'>Sorprender a tu pareja:</span> Basado en un cuestionario que respondes, te proporcionamos planes e ideas personalizadas que puedes utilizar para invitar a tu pareja a vivir momentos especiales.</p>\n\n<p><span className='font-bold'>Planes compartidos:</span> Cada miembro de la pareja completa su propio cuestionario en la aplicación. A partir de estos datos, generamos un plan que satisfaga los gustos de ambos. Además, integramos el plan en Google Calendar, enviando una notificación para que ambos reserven ese espacio en sus agendas.</p>"
+    answer: "Diadica ofrece dos funciones principales. Sorprender a tu pareja: Basado en un cuestionario que respondes, te proporcionamos planes e ideas personalizadas que puedes utilizar para invitar a tu pareja a vivir momentos especiales. Planes compartidos: Cada miembro de la pareja completa su propio cuestionario en la aplicación. A partir de estos datos, generamos un plan que satisfaga los gustos de ambos. Además, integramos el plan en Google Calendar, enviando una notificación para que ambos reserven ese espacio en sus agendas."
   },
   {
     question: "¿Para qué parejas se recomienda?",
