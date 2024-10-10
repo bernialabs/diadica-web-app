@@ -45,9 +45,9 @@ export default function Component() {
               <div className="hidden md:block flex-shrink-0">
                 <Image src="/hero_left.png" alt="Left App" width={526} height={623} className="w-auto h-auto" />
               </div>
-              <div className="text-center mx-32 md:mb-64">
+              <div className="text-center mx-2 flex-shrink-0 md:mb-64">
                 <h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos enredos.</h1>
-                <h1 className="text-5xl md:text-6xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">Más conexión.</h1>
               </div>
               <div className="hidden md:block flex-shrink-0">
                 <Image src="/hero_right.png" alt="Right App" width={526} height={623} className="w-auto h-auto" />
