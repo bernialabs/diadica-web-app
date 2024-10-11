@@ -85,11 +85,11 @@ export default function Component() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {features.map((feature, index) => (
                   <div key={index} className="text-center">
-                    <div className="w-[135px] h-[150px] mx-auto mb-4">
+                    <div className="w-[235px] h-[150px] mx-auto mb-4">
                       <Image
                         src={`/${feature.picture}`}
                         alt={feature.title}
-                        width={135}
+                        width={235}
                         height={150}
                         className="w-full h-full object-contain"
                       />
@@ -224,7 +224,7 @@ export default function Component() {
                         <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
                           <Linkedin className="w-6 h-6" />
                         </a>
-                        {member.name === "Maria Alejandra Ovalle Zuleta" && (
+                        {member.name === "Alejandra Ovalle Zuleta" && (
                           <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
                             <Globe className="w-6 h-6" />
                           </a>
@@ -419,24 +419,24 @@ const useCases = [
 
 const teamMembers = [
   {
-    name: "Maria Alejandra Ovalle Zuleta",
+    name: "Alejandra Ovalle Zuleta",
     position: "CEO",
     boldBio: "Psicóloga, Psicómetra y Terapeuta de Pareja.",
     bio: "Especialista en el desarrollo de cuestionarios psicométricos y con amplia experiencia como psicoterapeuta en su consultorio privado. Comparte contenido valioso en redes sociales enfocado en sexualidad y temas de pareja.",
     picture: "ale_1.png"
   },
   {
-    name: "Alejandro Fernandez",
+    name: "Alejandro Fernández Borrás",
     position: "CTO",
-    boldBio: "Desarrollador Backend Senior.",
-    bio: "Ingeniero de Software, especializado en diseño y arquitectura de servicios en la nube. Experiencia en Amazon Prime Video y Life360.",
+    boldBio: "Ingeniero de Software Senior.",
+    bio: "Especializado en diseño y arquitectura de servicios en cloud. Con experiencia tanto en startups como en grandes empresas. Ha trabajo en Amazon Prime Video, Life360 y RealNetworks entre otras.",
     picture: "ale_2.png"
   },
   {
-    name: "Andres Vasquez",
+    name: "Andrés Vásquez",
     position: "Desarrollador",
     boldBio: "Desarrollador Fronted Senior.",
-    bio: "Ingeniero deo software con experiencia en desarrollo de aplicaciones móviles, desarrollo web y manejo de servidores en Amazon Web Services (AWS).",
+    bio: "Ingeniero de software especializado en desarrollo de aplicaciones móviles, desarrollo web y manejo de servicios cloud en Amazon Web Services (AWS).",
     picture: "andres.png"
   },
 ]
