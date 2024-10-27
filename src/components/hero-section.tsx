@@ -2,7 +2,6 @@ import React from 'react'
 import { ArrowRight, Instagram, Twitter, Facebook, Linkedin, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import {
   Accordion,
   AccordionContent,
@@ -10,6 +9,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { AnimatedText } from './animated-text'
+import TallyButton from './tally-button'
+
 
 export default function Component() {
   return (
@@ -24,13 +25,13 @@ export default function Component() {
             <Link href="#" className="text-gray-600 hover:text-purple-600 hover:border-b-2 hover:border-purple-600 transition-colors duration-300">
               Experiencias
             </Link>
-            <Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
+            <TallyButton className="bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
               Únete a la prueba
-            </Button>
+            </TallyButton>
           </div>
-          <Button className="md:hidden bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
+          <TallyButton className="md:hidden bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
             Únete a la prueba
-          </Button>
+          </TallyButton>
         </div>
       </nav>
 
@@ -72,9 +73,9 @@ export default function Component() {
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
             En las relaciones modernas, el estrés y las responsabilidades diarias pueden disminuir la motivación, la energía y la creatividad para planear momentos especiales. Únete a Diadica y mantén viva la chispa en tu relación.
           </p>
-          <Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD] text-lg px-8 py-3">
+          <TallyButton className="bg-[#6163FD] text-white hover:bg-[#4A4BFD] text-lg px-8 py-3">
             Únete a la prueba
-          </Button>
+          </TallyButton>
         </div>
       </div>
 
@@ -158,10 +159,10 @@ export default function Component() {
                     className="h-10 w-auto"
                   />
                 </div>
-                <Button className="bg-[#89D8F1] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6BCAE3] transition-colors">
+                <TallyButton className="bg-[#89D8F1] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6BCAE3] transition-colors">
                   Únete a la prueba
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                </TallyButton>
               </div>
             </div>
           </div>
