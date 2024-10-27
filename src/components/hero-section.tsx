@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Instagram, Twitter, Facebook, Linkedin, Globe } from "lucide-react"
+import { ArrowRight, Instagram, Linkedin, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import {
