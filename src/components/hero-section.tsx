@@ -68,9 +68,9 @@ export default function Component() {
       {/* Call-to-action Section */}
       <div className="bg-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl text-gray-800 mb-4">Sé amable con tu mente</h2>
+          <h2 className="text-2xl md:text-3xl text-gray-800 mb-4">Invertir tiempo juntos fortalece la conexión</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Las parejas que invierten tiempo en actividades compartidas regularmente disfrutan de mayor satisfacción, intimidad y conexión. Esto es clave en las relaciones modernas, donde el estrés y las responsabilidades diarias pueden afectar la disponibilidad, la motivación y la creatividad para planear momentos juntos.
+            En las relaciones modernas, el estrés y las responsabilidades diarias pueden disminuir la motivación, la energía y la creatividad para planear momentos especiales. Únete a Diadica y mantén viva la chispa en tu relación.
           </p>
           <Button className="bg-[#6163FD] text-white hover:bg-[#4A4BFD] text-lg px-8 py-3">
             Únete a la prueba
@@ -365,18 +365,18 @@ export default function Component() {
 
 const features = [
   {
-    title: "Conexión emocional sólida",
-    description: "Facilitamos momentos significativos que fortalecen el vínculo entre las parejas, incluso a distancia, ayudando a mantener viva la chispa.",
+    title: "Conexión en cada experiencia",
+    description: "Facilitamos momentos significativos que fortalecen el vínculo entre las parejas, incluso a distancia, ayudando a renovar la magia en la relación.",
     picture: "feature_1.png"
   },
   {
-    title: "Experiencias personalizadas únicas",
-    description: "Aseguramos que cada actividad propuesta está alineada con las preferencias y necesidades de cada pareja, garantizando que ambos disfruten al máximo.",
+    title: "Experiencias personalizadas",
+    description: "Alineamos cada actividad con las preferencias y necesidades de la pareja, asegurando que disfruten mientras mejoran áreas específicas de su relación.",
     picture: "feature_2.png"
   },
   {
-    title: "Fomentar relaciones saludables",
-    description: "Ayudamos a las parejas a seguir priorizando el tiempo que comparten juntas, manteniéndolo como una parte esencial de sus vidas.",
+    title: "Planificación sin estrés",
+    description: "Liberamos el estrés y la falta de creatividad en la planificación, ocupándonos de los detalles para que disfruten de momentos especiales sin preocupaciones.",
     picture: "feature_3.png"
   },
 ]
@@ -384,17 +384,17 @@ const features = [
 const benefits = [
   {
     title: "Cuestionarios especializados",
-    description: "Con solo unas pocas preguntas seleccionadas por terapeutas, podrás compartir tus necesidades y gustos para obtener planes personalizados de forma rápida.",
+    description: "Responde unas pocas preguntas diseñadas por psicómetras y comparte rápidamente tus gustos y necesidades en la relación.",
     picture: "benefit_1.png"
   },
   {
     title: "IA entrada en terapia de pareja",
-    description: "Nuestra tecnología entrada con conocimiento experto, crea planes ajustados a ambos, garantizando experiencias que fortalezcan su vínculo.",
+    description: "Nuestra tecnología especializada con conocimiento en relaciones, crea actividades ajustados a ambos, garantizando experiencias que fortalezcan su vínculo.",
     picture: "benefit_2.png"
   },
   {
-    title: "Planificación sin complicaciones",
-    description: "No sólo sugerimos planes, también les enviamos el recordatorio por Google Calendar a los dos para que no olviden ningún momento especial.",
+    title: "Ideas y recordatorios especiales",
+    description: "Además de darte ideas, las programamos en Google Calendar para que ambos reciban recordatorios y cada momento especial sea más fácil de recordar.",
     picture: "benefit_3.png"
   },
 ]
@@ -445,19 +445,21 @@ const teamMembers = [
 const faqItems = [
   {
     question: "¿Qué es Diadica?",
-    answer: "Diadica es una aplicación móvil desarrollada por terapeutas de pareja y expertos en tecnología con el objetivo de ayudar a las parejas a superar los retos que enfrentan en la vida moderna, como el estrés y la falta de tiempo de calidad. Nuestra misión es proporcionar herramientas prácticas y efectivas que apoyen a las parejas, ayudándoles a fortalecer su conexión y gestionar mejor su tiempo y relación."
+    answer: "Diadica es la primera aplicación móvil desarrollada por terapeutas de pareja y expertos en inteligencia artifical, con el objetivo de ayudar a las parejas a superar los retos que enfrentan en la vida moderna, como el estrés y la falta de tiempo de calidad. Nuestra misión es proporcionar herramientas prácticas y efectivas que apoyen a las parejas, ayudándoles a fortalecer su conexión y gestionar mejor su tiempo y relación."
   },
   {
     question: "¿Para qué se diseñó esta aplicación?",
-    answer: "Esta aplicación fue creada para ayudar a las parejas a conectarse más profundamente, ya sea que estén a distancia o quieran salir de la rutina. Nuestro objetivo es facilitar planes personalizados y significativos que fortalezcan la relación, proporcionando ideas creativas y gestionando las actividades de forma eficiente."
+    answer: "Esta aplicación fue creada para ayudar a las parejas a conectarse más profundamente, ya sea que estén a distancia o quieran salir de la rutina. Nuestro objetivo es facilitar actividades personalizadas y significativas que fortalezcan la relación, brindando ideas creativas y gestionando cada detalle de manera eficiente."
   },
   {
     question: "¿La aplicación es gratuita?",
-    answer: "Puedes comenzar a usar Diadica con 169 créditos gratuitos, que te permitirán acceder a planes personalizados, sorprender a tu pareja y organizar actividades con integración a Google Calendar. Una vez que hayas utilizado tus créditos, ofrecemos opciones de paquetes adicionales o una suscripción ilimitada para que sigas disfrutando de todas las funciones de Diadica sin interrupciones."
+    answer: "Puedes comenzar a usar Diadica con 169 créditos gratuitos, que te permitirán acceder a actividades personalizadas, sorprender a tu pareja y programar vuestras actividades en Google Calendar. Una vez que hayas utilizado tus créditos, ofrecemos opciones de paquetes adicionales o una suscripción ilimitada para que sigas disfrutando de todas las funciones de Diadica sin interrupciones."
   },
   {
     question: "¿Cómo funciona?",
-    answer: "Diadica ofrece dos funciones principales. Sorprender a tu pareja: Basado en un cuestionario que respondes, te proporcionamos planes e ideas personalizadas que puedes utilizar para invitar a tu pareja a vivir momentos especiales. Planes compartidos: Cada miembro de la pareja completa su propio cuestionario en la aplicación. A partir de estos datos, generamos un plan que satisfaga los gustos de ambos. Además, integramos el plan en Google Calendar, enviando una notificación para que ambos reserven ese espacio en sus agendas."
+    answer: `Diadica ofrece dos funciones principales.
+             Sorprender a tu pareja: Basado en un cuestionario que respondes, te proporcionamos planes e ideas personalizadas que puedes utilizar para invitar a tu pareja a vivir momentos especiales.
+             Actividades compartidas: Cada miembro de la pareja completa su propio cuestionario en la aplicación. A partir de estos datos, generamos un plan que satisfaga los gustos de ambos. Además, integramos el plan en Google Calendar, enviando una notificación para que ambos reserven ese espacio en sus agendas.`
   },
   {
     question: "¿Para qué parejas se recomienda?",
