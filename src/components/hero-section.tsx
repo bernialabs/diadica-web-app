@@ -19,7 +19,9 @@ export default function Component() {
       <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-10">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/logo.png" alt="Diadica Logo" width={190} height={32} className="h-auto" />
+            <a href="#">
+              <Image src="/logo.png" alt="Diadica Logo" width={190} height={32} className="h-auto" />
+            </a>
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <Link href="#" className="text-gray-600 hover:text-purple-600 hover:border-b-2 hover:border-purple-600 transition-colors duration-300">
@@ -220,14 +222,14 @@ export default function Component() {
                       <p className="text-gray-600 mb-2 font-bold">{member.boldBio}</p>
                       <p className="text-gray-600 mb-4 flex-grow">{member.bio}</p>
                       <div className="flex space-x-4">
-                        <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
-                          <Instagram className="w-6 h-6" />
-                        </a>
-                        <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
+                        <a href={member.linkedin} className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
                           <Linkedin className="w-6 h-6" />
                         </a>
+                        <a href={member.instagram} className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
+                          <Instagram className="w-6 h-6" />
+                        </a>
                         {member.name === "Alejandra Ovalle Zuleta" && (
-                          <a href="#" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
+                          <a href="https://mariaterapeuta.com/" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
                             <Globe className="w-6 h-6" />
                           </a>
                         )}
@@ -276,13 +278,15 @@ export default function Component() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
               {/* Logo & Tagline Column */}
               <div className="flex flex-col items-start">
-                <Image
-                  src="/logo_icon.png"
-                  alt="Diadica Logo"
-                  width={65}
-                  height={25}
-                  className="mb-4 h-auto"
-                />
+                <a href="#">
+                  <Image
+                    src="/logo_icon.png"
+                    alt="Diadica Logo"
+                    width={65}
+                    height={25}
+                    className="mb-4 h-auto"
+                  />
+                </a>
                 <p className="text-gray-800 font-bold mb-2">Conecta con tu pareja. Fortalece tu relación saludable</p>
                 <p className="text-sm font-semibold mb-4">DESCARGA LA APP DIADICA</p>
                 <div className="flex space-x-2">
@@ -327,16 +331,10 @@ export default function Component() {
               <div>
                 <h3 className="text-gray-800 font-bold uppercase mb-4">¡Síguenos!</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
+                  <a href="https://www.instagram.com/diadicatips" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
                     <Instagram className="w-6 h-6 text-white" />
                   </a>
-                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
-                    <Twitter className="w-6 h-6 text-white" />
-                  </a>
-                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
-                    <Facebook className="w-6 h-6 text-white" />
-                  </a>
-                  <a href="#" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
+                  <a href="https://www.linkedin.com/company/diadica/" className="rounded-full p-2 bg-gradient-to-b from-[#89D8F1] to-[#98A2FB] hover:from-[#6BCAE3] hover:to-[#7A84DD] transition-colors">
                     <Linkedin className="w-6 h-6 text-white" />
                   </a>
                 </div>
@@ -425,21 +423,27 @@ const teamMembers = [
     position: "CEO",
     boldBio: "Psicóloga, Psicómetra y Terapeuta de Pareja.",
     bio: "Especialista en el desarrollo de cuestionarios psicométricos y con amplia experiencia como psicoterapeuta en su consultorio privado. Comparte contenido valioso en redes sociales enfocado en sexualidad y temas de pareja.",
-    picture: "ale_1.png"
+    picture: "ale_1.png",
+    instagram: "https://www.instagram.com/mariale_921/profilecard/?igsh=MW1ocmk1azRxaXlvYg%3D%3D",
+    linkedin: "https://www.linkedin.com/in/ma-alejandra-ovalle-zuleta-8135a2124/"
   },
   {
     name: "Alejandro Fernández Borrás",
     position: "CTO",
     boldBio: "Ingeniero de Software Senior.",
     bio: "Especializado en diseño y arquitectura de servicios en cloud. Con experiencia tanto en startups como en grandes empresas. Ha trabajo en Amazon Prime Video, Life360 y RealNetworks entre otras.",
-    picture: "ale_2.png"
+    picture: "ale_2.png",
+    instagram: "https://www.instagram.com/elreallex/",
+    linkedin: "https://www.linkedin.com/in/alejandrofb/"
   },
   {
     name: "Andrés Vásquez",
     position: "Desarrollador",
     boldBio: "Desarrollador Fronted Senior.",
     bio: "Ingeniero de software especializado en desarrollo de aplicaciones móviles, desarrollo web y manejo de servicios cloud en Amazon Web Services (AWS).",
-    picture: "andres.png"
+    picture: "andres.png",
+    instagram: "",
+    linkedin: "https://www.linkedin.com/in/andres-vasquez-57b451102/"
   },
 ]
 
