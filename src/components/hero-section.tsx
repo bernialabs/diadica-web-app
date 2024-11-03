@@ -121,7 +121,7 @@ export default function Component() {
               </AnimatedText>
               <div className="space-y-12 mx-[15%]">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center space-x-8">
+                  <div key={index} className="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0">
                     <div className="flex-shrink-0">
                       <div className="w-32 h-32 rounded-full bg-[#89D8F1] flex items-center justify-center">
                         <Image
@@ -133,7 +133,7 @@ export default function Component() {
                         />
                       </div>
                     </div>
-                    <div className="flex-grow">
+                    <div className="flex-grow text-center sm:text-left">
                       <AnimatedText delay={index * 200}>
                         <h3 className="text-xl font-bold text-gray-800 mb-2">{benefit.title}</h3>
                       </AnimatedText>
