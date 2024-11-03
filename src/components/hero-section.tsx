@@ -28,11 +28,11 @@ export default function Component() {
               Experiencias
             </Link>
             <TallyButton className="bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
-              Únete a la prueba
+              Únete a Diadica
             </TallyButton>
           </div>
           <TallyButton className="md:hidden bg-[#6163FD] text-white hover:bg-[#4A4BFD]">
-            Únete a la prueba
+            Únete a Diadica
           </TallyButton>
         </div>
       </nav>
@@ -50,8 +50,9 @@ export default function Component() {
               </div>
               <div className="text-center mx-2 flex-shrink-0 md:mb-64">
                 <h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos rutina y más magia.</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">Ama y conecta</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">con tu pareja.</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">Conecta a otro</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">nivel con tu</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">pareja</h1>
               </div>
               <div className="hidden md:block flex-shrink-0">
                 <Image src="/hero_right.png" alt="Right App" width={526} height={623} className="w-auto h-auto" />
@@ -71,12 +72,12 @@ export default function Component() {
       {/* Call-to-action Section */}
       <div className="bg-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl text-gray-800 mb-4">Invertir tiempo juntos fortalece la conexión</h2>
+          <h2 className="text-2xl md:text-3xl text-gray-800 mb-4">¿Sientes que falta algo de novedad en tu relación?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            En las relaciones modernas, el estrés y las responsabilidades diarias pueden disminuir la motivación, la energía y la creatividad para planear momentos especiales. Únete a Diadica y mantén viva la chispa en tu relación.
+            En medio del ajetreo diario, el cansancio se acumula y, sin darnos cuenta, esos momentos mágicos juntos se desvanecen. ¿Que tal si hubiera una forma simple de reavivar la chispa de su amor?
           </p>
           <TallyButton className="bg-[#6163FD] text-white hover:bg-[#4A4BFD] text-lg px-8 py-3">
-            Únete a la prueba
+            Únete a Diadica
           </TallyButton>
         </div>
       </div>
@@ -115,7 +116,7 @@ export default function Component() {
             <div className="max-w-7xl mx-auto">
               <AnimatedText>
                 <h2 className="text-3xl font-bold text-gray-800 mb-12 mx-auto max-w-3xl text-center">
-                  Personalizado para dos, ayudándoles a centrarse en lo que verdaderamente importa.
+                  Revive esos momentos que hacen única tu relación con la primera aplicación personalizada para parejas
                 </h2>
               </AnimatedText>
               <div className="space-y-12 mx-[15%]">
@@ -162,7 +163,7 @@ export default function Component() {
                   />
                 </div>
                 <TallyButton className="bg-[#89D8F1] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6BCAE3] transition-colors">
-                  Únete a la prueba
+                  Únete a Diadica
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </TallyButton>
               </div>
@@ -173,9 +174,14 @@ export default function Component() {
           <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <AnimatedText>
-                <h2 className="text-4xl font-bold text-center text-[#333333] mb-12">
-                  Casos de usos de Diadica
+                <h2 className="text-4xl font-bold text-center text-[#333333] mb-4">
+                  Diseñada para diferentes tipos de parejas
                 </h2>
+              </AnimatedText>
+              <AnimatedText delay={200}>
+                <p className="text-center text-gray-600 mb-12">
+                  Cada pareja es única, pero el deseo de conectar es el mismo
+                </p>
               </AnimatedText>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {useCases.map((useCase, index) => (
@@ -191,6 +197,9 @@ export default function Component() {
                     </div>
                     <AnimatedText delay={index * 200}>
                       <p className="font-bold text-black">{useCase.title}</p>
+                    </AnimatedText>
+                    <AnimatedText delay={index * 200 + 100}>
+                      <p className="text-gray-600">{useCase.description}</p>
                     </AnimatedText>
                   </div>
                 ))}
@@ -364,36 +373,36 @@ export default function Component() {
 
 const features = [
   {
-    title: "Conexión en cada experiencia",
-    description: "Facilitamos momentos significativos que fortalecen el vínculo entre las parejas, incluso a distancia, ayudando a renovar la magia en la relación.",
+    title: "Conexión compartida",
+    description: "Cada experiencia está hecha para que se redescubran, sientan que son el refugio del otro y revivan juntos esa magia única.",
     picture: "feature_1.png"
   },
   {
     title: "Experiencias personalizadas",
-    description: "Alineamos cada actividad con las preferencias y necesidades de la pareja, asegurando que disfruten mientras mejoran áreas específicas de su relación.",
+    description: "Hecho especialmente para ustedes, para que puedan crecer en su relación sintiéndose comprendidos y valorados.",
     picture: "feature_2.png"
   },
   {
-    title: "Planificación sin estrés",
-    description: "Liberamos el estrés y la falta de creatividad en la planificación, ocupándonos de los detalles para que disfruten de momentos especiales sin preocupaciones.",
+    title: "Sin preocupación ni estrés",
+    description: "Nos encargamos de cada detalle para que te sumerjas en ese momento, centrándote en conectar y crear recuerdos con tu pareja.",
     picture: "feature_3.png"
   },
 ]
 
 const benefits = [
   {
-    title: "Cuestionarios especializados",
-    description: "Responde unas pocas preguntas diseñadas por psicómetras y comparte rápidamente tus gustos y necesidades en la relación.",
+    title: "Olvídate de lo estándar, recibe justo lo que tu relación necesita",
+    description: "Responde un cuestionario con preguntas rápidas y verás cómo entendemos cada detalle de lo que desean y necesitan para sentirse verdaderamente conectados.",
     picture: "benefit_1.png"
   },
   {
-    title: "IA entrada en terapia de pareja",
-    description: "Nuestra tecnología especializada con conocimiento en relaciones, crea actividades ajustados a ambos, garantizando experiencias que fortalezcan su vínculo.",
+    title: "Inteligencia artificial entrenada en hacer crecer tu relación",
+    description: "Diseñada por expertos en terapia de pareja, esta IA no solo sugiere planes, sino que crea momentos únicos, hechos para mantener viva esa chispa de la relación. Es como tener a alguien que conoce tu historia y te ayuda a construir recuerdos nuevos y profundos con tu pareja.",
     picture: "benefit_2.png"
   },
   {
-    title: "Ideas y recordatorios especiales",
-    description: "Además de darte ideas, las programamos en Google Calendar para que ambos reciban recordatorios y cada momento especial sea más fácil de recordar.",
+    title: "Dile adiós a los olvidos y a los momentos desaprovechados",
+    description: "Con nuestras ideas y recordatorios, esos momentos especiales aparecen en el momento perfecto, en su Google Calendar, para que no se pierdan ni una sola oportunidad de vivir, disfrutar y volver a conectar.",
     picture: "benefit_3.png"
   },
 ]
@@ -401,18 +410,22 @@ const benefits = [
 const useCases = [
   {
     title: "Parejas a distancia",
+    description: "La distancia no tiene porque limitar la conexión con nuestra pareja",
     picture: "couples_1.png",
   },
   {
     title: "Parejas con agendas ocupadas",
+    description: "Nuestra pareja merece un espacio en nuestras agendas",
     picture: "couples_2.png",
   },
   {
     title: "Parejas con ganas de innovar",
+    description: "Tener actividades novedosas con mi pareja nunca cae mal",
     picture: "couples_3.png",
   },
   {
-    title: "Parejas a las que les cuesta encontrar ideas",
+    title: "Parejas con falta de ideas",
+    description: "Un empujón creativo para dejar de ir a los mismos lugares",
     picture: "couples_4.png",
   },
 ]
@@ -449,25 +462,23 @@ const teamMembers = [
 
 const faqItems = [
   {
-    question: "¿Qué es Diadica?",
-    answer: "Diadica es la primera aplicación móvil desarrollada por terapeutas de pareja y expertos en inteligencia artifical, con el objetivo de ayudar a las parejas a superar los retos que enfrentan en la vida moderna, como el estrés y la falta de tiempo de calidad. Nuestra misión es proporcionar herramientas prácticas y efectivas que apoyen a las parejas, ayudándoles a fortalecer su conexión y gestionar mejor su tiempo y relación."
+    question: "¿Es fácil empezar a planear con Diadica?",
+    answer: "¡Muy fácil! Solo tienen que responder algunas preguntas iniciales, y en unos minutos, Diadica les ofrece planes y sorpresas listas para disfrutar. La aplicación hace que planear sea simple y sin estrés, dejándoles tiempo para concentrarse en disfrutar juntos.",
   },
   {
-    question: "¿Para qué se diseñó esta aplicación?",
-    answer: "Esta aplicación fue creada para ayudar a las parejas a conectarse más profundamente, ya sea que estén a distancia o quieran salir de la rutina. Nuestro objetivo es facilitar actividades personalizadas y significativas que fortalezcan la relación, brindando ideas creativas y gestionando cada detalle de manera eficiente."
+    question: "¿La aplicación es gratuita? ",
+    answer: "Pueden comenzar a usar Diadica con 169 créditos gratuitos, que les permitirán acceder a actividades personalizadas, planear sorpresas y programar sus momentos especiales en Google Calendar. Cuando se agoten los créditos, pueden optar por una suscripción ilimitada de solo 6,99 € al mes o 11,99 € por trimestre, y seguir disfrutando de todas las funciones de Diadica sin interrupciones.",
   },
   {
-    question: "¿La aplicación es gratuita?",
-    answer: "Puedes comenzar a usar Diadica con 169 créditos gratuitos, que te permitirán acceder a actividades personalizadas, sorprender a tu pareja y programar vuestras actividades en Google Calendar. Una vez que hayas utilizado tus créditos, ofrecemos opciones de paquetes adicionales o una suscripción ilimitada para que sigas disfrutando de todas las funciones de Diadica sin interrupciones."
+    question: "¿Diadica puede funcionar para mí y mi pareja?",
+    answer: "¡Claro que sí! Diadica está diseñado para adaptarse a diferentes tipos de parejas y momentos de la relación. Ya sea que tengan poco tiempo juntos, vivan a distancia, estén buscando nuevas ideas o simplemente quieran reforzar su conexión, Diadica crea experiencias pensadas para sus gustos y necesidades. Sin importar dónde estén o cómo sean sus rutinas, Diadica les ayuda a mantener viva la chispa de su relación de una forma sencilla y personalizada.",
   },
   {
-    question: "¿Cómo funciona?",
-    answer: `Diadica ofrece dos funciones principales.
-             Sorprender a tu pareja: Basado en un cuestionario que respondes, te proporcionamos planes e ideas personalizadas que puedes utilizar para invitar a tu pareja a vivir momentos especiales.
-             Actividades compartidas: Cada miembro de la pareja completa su propio cuestionario en la aplicación. A partir de estos datos, generamos un plan que satisfaga los gustos de ambos. Además, integramos el plan en Google Calendar, enviando una notificación para que ambos reserven ese espacio en sus agendas.`
+    question: "¿Qué experiencias encontraremos en Diadica?",
+    answer: "Las experiencias que proporcionamos están adaptadas a los gustos de ambos y a las necesidades específicas de su relación. Cada actividad incluye pequeños retos que hacen que cada momento sea una oportunidad única para crecer juntos. Estas sorpresas están pensadas para captar su atención y para que ambos valoren el tiempo compartido.",
   },
   {
-    question: "¿Para qué parejas se recomienda?",
-    answer: "Diadica está diseñada para parejas que buscan fortalecer su conexión, ya sea que estén a distancia, tengan agendas ocupadas o quieran salir de la rutina. La aplicación ofrece herramientas para sorprender a tu pareja con ideas creativas o generar planes personalizados que satisfacen a ambos."
+    question: "¿Cómo personaliza Diadica las actividades para nosotros?",
+    answer: "Diadica integra las respuestas de ambos del breve cuestionario diseñado para entender sus preferencias y necesidades como pareja. A partir de ahí, la aplicación elige actividades que no solo se alinean con sus gustos individuales, sino también con lo que necesitan para crecer juntos. Es como tener un plan único hecho a su medida."
   }
 ]
