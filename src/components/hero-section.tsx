@@ -49,10 +49,11 @@ export default function Component() {
                 <Image src="/hero_left.png" alt="Left App" width={526} height={623} className="w-auto h-auto" />
               </div>
               <div className="text-center mx-2 flex-shrink-0 md:mb-64">
-                <h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos rutina y más magia.</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">Conecta a otro</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">nivel con tu</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">pareja</h1>
+                <h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos rutina. Más magia.</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">Conecta, cuida y</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">fortalece tu amor</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">en un solo lugar.</h1>
+
               </div>
               <div className="hidden md:block flex-shrink-0">
                 <Image src="/hero_right.png" alt="Right App" width={526} height={623} className="w-auto h-auto" />
@@ -116,7 +117,7 @@ export default function Component() {
             <div className="max-w-7xl mx-auto">
               <AnimatedText>
                 <h2 className="text-3xl font-bold text-gray-800 mb-12 mx-auto max-w-3xl text-center">
-                  Revive esos momentos que hacen única tu relación con la primera aplicación personalizada para parejas
+                  Haz que hoy sea el comienzo de una nueva etapa llena de conexión y novedad con tu pareja
                 </h2>
               </AnimatedText>
               <div className="space-y-12 mx-[15%]">
@@ -409,18 +410,18 @@ export default function Component() {
 
 const features = [
   {
-    title: "Conexión compartida",
-    description: "Cada experiencia está hecha para que se redescubran, sientan que son el refugio del otro y revivan juntos esa magia única.",
+    title: "Conexión genuina",
+    description: "Conecta con tu pareja y siente cómo la magia de su amor vuelve a brillar genuinamente.",
     picture: "feature_1.png"
   },
   {
-    title: "Experiencias personalizadas",
-    description: "Hecho especialmente para ustedes, para que puedan crecer en su relación sintiéndose comprendidos y valorados.",
+    title: "Planificación sin estrés",
+    description: "Nos encargamos de todo para que tú solo te dediques a disfrutar y conectar con tu pareja.",
     picture: "feature_2.png"
   },
   {
-    title: "Sin preocupación ni estrés",
-    description: "Nos encargamos de cada detalle para que te sumerjas en ese momento, centrándote en conectar y crear recuerdos con tu pareja.",
+    title: "Amor positivo y saludable",
+    description: "Fortalece la confianza, la intimidad y la complicidad en tu relación, construyendo vínculos profundos.",
     picture: "feature_3.png"
   },
 ]
@@ -428,17 +429,17 @@ const features = [
 const benefits = [
   {
     title: "Olvídate de lo estándar, recibe justo lo que tu relación necesita",
-    description: "Responde un cuestionario con preguntas rápidas y verás cómo entendemos cada detalle de lo que desean y necesitan para sentirse verdaderamente conectados.",
+    description: "Responde un breve cuestionario y, con solo unas preguntas, descubriremos lo que tú y tu pareja anhelan y necesitan para sentirse realmente conectados.",
     picture: "benefit_1.png"
   },
   {
-    title: "Inteligencia artificial entrenada en hacer crecer tu relación",
-    description: "Diseñada por expertos en terapia de pareja, esta IA no solo sugiere planes, sino que crea momentos únicos, hechos para mantener viva esa chispa de la relación. Es como tener a alguien que conoce tu historia y te ayuda a construir recuerdos nuevos y profundos con tu pareja.",
+    title: "Inteligencia artificial especializada en entender tu relación",
+    description: "Esta IA, desarrollada con el conocimiento de expertos en terapia de pareja, utiliza la información única de tu relación para crear recomendaciones personalizadas que impulsan la novedad y fortalecen el vínculo.",
     picture: "benefit_2.png"
   },
   {
-    title: "Dile adiós a los olvidos y a los momentos desaprovechados",
-    description: "Con nuestras ideas y recordatorios, esos momentos especiales aparecen en el momento perfecto, en su Google Calendar, para que no se pierdan ni una sola oportunidad de vivir, disfrutar y volver a conectar.",
+    title: "Dile adiós a postergar y a las oportunidades perdidas",
+    description: "Con nuestras ideas y recordatorios, esos momentos especiales estarán listos en el momento perfecto, directamente en tu Google Calendar, para que tú y tu pareja no pierdan ninguna oportunidad de disfrutar y reconectar.",
     picture: "benefit_3.png"
   },
 ]
