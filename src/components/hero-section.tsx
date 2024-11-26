@@ -208,40 +208,76 @@ export default function Component() {
           </div>
 
           {/* Team Section */}
-          <div className="bg-[#C3E6FC] py-16 px-4 sm:px-6 lg:px-8 rounded-lg">
+          <div className="bg-[#C4E7FC] py-16 px-4 sm:px-6 lg:px-8 font-['Century Gothic']">
             <div className="max-w-7xl mx-auto">
-              <AnimatedText>
-                <h2 className="text-4xl font-bold text-center text-black mb-12">
-                  Conoce al equipo
-                </h2>
-              </AnimatedText>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Title */}
+              <h2 className="text-4xl font-bold text-center text-black mb-8">
+                El origen de nuestra idea
+              </h2>
+
+              {/* Content Container */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div className="col-span-full mb-6 text-[#333333] space-y-6 text-lg leading-relaxed">
+                  <p>
+                    Todo comenzó cuando, como terapeuta de pareja, me di cuenta de algo preocupante: <span className="font-bold">muchas parejas buscan ayuda solo cuando sus problemas ya han alcanzado un punto crítico</span>. Las estadísticas lo respaldan: <span className="font-bold">2 de cada 3 parejas llegan a terapia demasiado tarde</span>, ignorando señales que podrían haberse abordado a tiempo.
+                  </p>
+                  <p>
+                    Escuchando sus historias y frustraciones, me di cuenta de que hacía falta algo más, una herramienta que no solo reparara, sino que ayudara a las parejas a <span className="font-bold">cuidar su relación</span> antes de que los problemas se profundizaran.
+                  </p>
+                  <p>
+                    Así nació <span className="italic">Diadica</span>, una aplicación pensada para ser el aliado diario de las relaciones. Decidí enfocarme en ayudar a las parejas a priorizar su tiempo de calidad, ya que la falta de momentos compartidos y la monotonía deterioran incluso las relaciones más fuertes. Con <span className="italic">Diadica</span>, quiero ofrecerles la oportunidad de mantener viva la conexión, la emoción y la intimidad que hacen única a cada relación.
+                  </p>
+                  <p>
+                    Hoy, junto a Alejandro y Andrés, un equipo <span className="font-bold">increíble</span>, trabajamos cada día para que <span className="italic">Diadica</span> sea un recurso invaluable para las parejas.
+                  </p>
+                </div>
+
+                {/* Founder's Signature */}
+                <div className="col-span-full mb-8 text-left">
+                  <p className="font-bold text-xl">Alejandra Ovalle Zuleta</p>
+                  <p className="text-[#4A7D7D]">CEO de Diadica</p>
+                </div>
+
+                {/* Team Profiles */}
                 {teamMembers.map((member, index) => (
                   <AnimatedText key={index} delay={index * 200}>
-                    <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md h-full">
+                    <div className="bg-white rounded-lg shadow-md p-4 flex items-start space-x-4">
                       <Image
                         src={`/${member.picture}`}
                         alt={member.name}
-                        width={200}
-                        height={200}
-                        className="w-48 h-48 rounded-full mb-4"
+                        width={100}
+                        height={100}
+                        className="w-24 h-24 rounded-full object-cover flex-shrink-0"
                       />
-                      <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
-                      <p className="text-[#6163FD] font-bold mb-2">{member.position}</p>
-                      <p className="text-gray-600 mb-2 font-bold">{member.boldBio}</p>
-                      <p className="text-gray-600 mb-4 flex-grow">{member.bio}</p>
-                      <div className="flex space-x-4">
-                        <a href={member.linkedin} className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
-                          <Linkedin className="w-6 h-6" />
-                        </a>
-                        <a href={member.instagram} className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
-                          <Instagram className="w-6 h-6" />
-                        </a>
-                        {member.name === "Alejandra Ovalle Zuleta" && (
-                          <a href="https://mariaterapeuta.com/" className="text-[#89D8F1] hover:text-[#6BCAE3] transition-colors">
-                            <Globe className="w-6 h-6" />
+                      <div className="flex flex-col">
+                        <h3 className="text-lg font-bold text-black">{member.name}</h3>
+                        <p className="text-[#4A7D7D] font-medium">{member.position}</p>
+                        <p className="text-[#4A7D7D] text-sm mb-2">{member.title}</p>
+                        <div className="flex space-x-3">
+                          <a
+                            href={member.linkedin}
+                            className="text-[#666666] hover:text-[#007BFF] transition-colors"
+                            aria-label={`LinkedIn profile of ${member.name}`}
+                          >
+                            <Linkedin className="w-5 h-5" />
                           </a>
-                        )}
+                          <a
+                            href={member.instagram}
+                            className="text-[#666666] hover:text-[#007BFF] transition-colors"
+                            aria-label={`Instagram profile of ${member.name}`}
+                          >
+                            <Instagram className="w-5 h-5" />
+                          </a>
+                          {member.name === "Alejandra Ovalle Zuleta" && (
+                            <a
+                              href="https://mariaterapeuta.com/"
+                              className="text-[#666666] hover:text-[#007BFF] transition-colors"
+                              aria-label="Personal website"
+                            >
+                              <Globe className="w-5 h-5" />
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </AnimatedText>
@@ -434,8 +470,7 @@ const teamMembers = [
   {
     name: "Alejandra Ovalle Zuleta",
     position: "CEO",
-    boldBio: "Psicóloga, Psicómetra y Terapeuta de Pareja.",
-    bio: "Especialista en el desarrollo de cuestionarios psicométricos y con amplia experiencia como psicoterapeuta en su consultorio privado. Comparte contenido valioso en redes sociales enfocado en sexualidad y temas de pareja.",
+    title: "Psicóloga, Psicómetra y Terapeuta de Pareja.",
     picture: "ale_1.png",
     instagram: "https://www.instagram.com/mariale_921/profilecard/?igsh=MW1ocmk1azRxaXlvYg%3D%3D",
     linkedin: "https://www.linkedin.com/in/ma-alejandra-ovalle-zuleta-8135a2124/"
@@ -443,8 +478,7 @@ const teamMembers = [
   {
     name: "Alejandro Fernández Borrás",
     position: "CTO",
-    boldBio: "Ingeniero de Software Senior.",
-    bio: "Especializado en diseño y arquitectura de servicios en cloud. Con experiencia tanto en startups como en grandes empresas. Ha trabajo en Amazon Prime Video, Life360 y RealNetworks entre otras.",
+    title: "Ingeniero de Software Senior.",
     picture: "ale_2.png",
     instagram: "https://www.instagram.com/elreallex/",
     linkedin: "https://www.linkedin.com/in/alejandrofb/"
@@ -452,8 +486,7 @@ const teamMembers = [
   {
     name: "Andrés Vásquez",
     position: "Desarrollador",
-    boldBio: "Desarrollador Fronted Senior.",
-    bio: "Ingeniero de software especializado en desarrollo de aplicaciones móviles, desarrollo web y manejo de servicios cloud en Amazon Web Services (AWS).",
+    title: "Desarrollador Fronted Senior.",
     picture: "andres.png",
     instagram: "",
     linkedin: "https://www.linkedin.com/in/andres-vasquez-57b451102/"
