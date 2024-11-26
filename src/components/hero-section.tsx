@@ -38,7 +38,7 @@ export default function Component() {
       </nav>
 
       {/* Hero Section */}
-      <div className="flex-grow bg-gradient-to-b from-[#E7F7FD] to-[#C4CDFB] pt-20">
+      <div className="flex-grow bg-gradient-to-b from-[#8ad5f1] to-[#98a4fb] pt-20">
         <div className="py-12 flex flex-col items-center">
           <div className="md:hidden mb-8">
             <Image src="/hero_right.png" alt="Mobile App" width={531} height={42} />
@@ -50,9 +50,9 @@ export default function Component() {
               </div>
               <div className="text-center mx-2 flex-shrink-0 md:mb-64">
                 <h1 className="text-3xl md:text-4xl text-[#454341] mb-32">Menos rutina. Más magia.</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">Conecta, cuida y</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">fortalece tu amor</h1>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#92C4FC] mb-8">en un solo lugar.</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#454341] mb-8">Fortalece tu</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#454341] mb-8">relación en un</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-[#454341] mb-8">solo lugar.</h1>
 
               </div>
               <div className="hidden md:block flex-shrink-0">
@@ -64,7 +64,7 @@ export default function Component() {
       </div>
 
       {/* Wave Transition */}
-      <div className="bg-[#C4CDFB]">
+      <div className="bg-[#98a4fb]">
         <svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 53.3C840 47 960 33 1080 30C1200 27 1320 33 1380 36.7L1440 40V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V0Z" fill="white" />
         </svg>
@@ -411,7 +411,7 @@ export default function Component() {
 const features = [
   {
     title: "Conexión genuina",
-    description: "Conecta con tu pareja y siente cómo la magia de su amor vuelve a brillar genuinamente.",
+    description: "Conecta con tu pareja y siente cómo la magia de su amor vuelve a brillar verdaderamente.",
     picture: "feature_1.png"
   },
   {
