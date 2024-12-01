@@ -124,7 +124,7 @@ export default function Component() {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0">
                     <div className="flex-shrink-0">
-                      <div className="w-32 h-32 rounded-full bg-[#89D8F1] flex items-center justify-center">
+                      <div className="w-32 h-32 rounded-full bg-[#fff9c4] flex items-center justify-center">
                         <Image
                           src={`/${benefit.picture}`}
                           alt={benefit.title}
@@ -288,7 +288,7 @@ export default function Component() {
           </div>
 
           {/* FAQ Section */}
-          <div className="bg-[#F0F8FB] py-16 px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#fff9c4] py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <AnimatedText>
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
