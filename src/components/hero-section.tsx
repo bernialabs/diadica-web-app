@@ -217,8 +217,9 @@ export default function Component() {
               </h2>
 
               {/* Content Container */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                <div className="col-span-full mb-6 text-[#333333] space-y-6 text-lg leading-relaxed">
+              <div className="space-y-8">
+                {/* Introductory Text */}
+                <div className="text-[#333333] space-y-6 text-lg leading-relaxed">
                   <p>
                     Todo comenzó cuando, como terapeuta de pareja, me di cuenta de algo preocupante: <span className="font-bold">muchas parejas buscan ayuda solo cuando sus problemas ya han alcanzado un punto crítico</span>. Las estadísticas lo respaldan: <span className="font-bold">2 de cada 3 parejas llegan a terapia demasiado tarde</span>, ignorando señales que podrían haberse abordado a tiempo.
                   </p>
@@ -234,26 +235,30 @@ export default function Component() {
                 </div>
 
                 {/* Founder's Signature */}
-                <div className="col-span-full mb-8 text-left">
+                <div className="text-left">
                   <p className="font-bold text-xl">Alejandra Ovalle Zuleta</p>
                   <p className="text-[#4A7D7D]">CEO de Diadica</p>
                 </div>
 
                 {/* Team Profiles */}
-                {teamMembers.map((member, index) => (
-                  <AnimatedText key={index} delay={index * 200}>
-                    <div className="bg-white rounded-lg shadow-md p-4 flex items-start space-x-4">
-                      <Image
-                        src={`/${member.picture}`}
-                        alt={member.name}
-                        width={100}
-                        height={100}
-                        className="w-24 h-24 rounded-full object-cover flex-shrink-0"
-                      />
-                      <div className="flex flex-col">
-                        <h3 className="text-lg font-bold text-black">{member.name}</h3>
-                        <p className="text-[#4A7D7D] font-medium">{member.position}</p>
-                        <p className="text-[#4A7D7D] text-sm mb-2">{member.title}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+                  {teamMembers.map((member, index) => (
+                    <AnimatedText key={index} delay={index * 200}>
+                      <div key={index} className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+                        <div className="flex items-center space-x-4 mb-auto">
+                          <Image
+                            src={`/${member.picture}`}
+                            alt={member.name}
+                            width={100}
+                            height={100}
+                            className="w-24 h-24 rounded-full object-cover flex-shrink-0"
+                          />
+                          <div className="flex flex-col">
+                            <h3 className="text-lg font-bold text-black">{member.name}</h3>
+                            <p className="text-[#4a4bfd] font-bold">{member.position}</p>
+                            <p className="text-[#4a4bfd] font-bold">{member.title}</p>
+                          </div>
+                        </div>
                         <div className="flex space-x-3">
                           <a
                             href={member.linkedin}
@@ -280,9 +285,9 @@ export default function Component() {
                           )}
                         </div>
                       </div>
-                    </div>
-                  </AnimatedText>
-                ))}
+                    </AnimatedText>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -471,7 +476,7 @@ const teamMembers = [
   {
     name: "Alejandra Ovalle Zuleta",
     position: "CEO",
-    title: "Psicóloga, Psicómetra y Terapeuta de Pareja.",
+    title: "Psicóloga, Psicómetra y Terapeuta de Pareja",
     picture: "ale_1.png",
     instagram: "https://www.instagram.com/mariale_921/profilecard/?igsh=MW1ocmk1azRxaXlvYg%3D%3D",
     linkedin: "https://www.linkedin.com/in/ma-alejandra-ovalle-zuleta-8135a2124/"
@@ -479,7 +484,7 @@ const teamMembers = [
   {
     name: "Alejandro Fernández Borrás",
     position: "CTO",
-    title: "Ingeniero de Software Senior.",
+    title: "Ingeniero de Software Senior",
     picture: "ale_2.png",
     instagram: "https://www.instagram.com/elreallex/",
     linkedin: "https://www.linkedin.com/in/alejandrofb/"
@@ -487,7 +492,7 @@ const teamMembers = [
   {
     name: "Andrés Vásquez",
     position: "Desarrollador",
-    title: "Desarrollador Fronted Senior.",
+    title: "Desarrollador Fronted Senior",
     picture: "andres.png",
     instagram: "",
     linkedin: "https://www.linkedin.com/in/andres-vasquez-57b451102/"
